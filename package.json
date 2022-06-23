@@ -1,5 +1,5 @@
 {
-  "name": "test-typescript-npm-gj-qn",
+  "name": "@gjimenez97/message",
   "version": "1.0.2",
   "description": "test of upload typescript",
   "main": "dist/Message.js",
@@ -10,12 +10,14 @@
     "copy:package": "tsc --build --copyTo package",
     "tsc:message": "tsc  -p ./src/Message/tsconfig.json",
     "copy": "node ./util/npm/copyFile.js",
-    "copy:message": "node ./scripts/copyFile.js --mesage",
-    "build:message": "npm-run-all --parallel tsc:message \"copy --Message\""
+    "copy:message": "node ./util/npm/copyFile.js --message",
+    "build:message": "npm-run-all tsc:message copy:message"
   },
-  "author": "GJ",
+  "author": "gjimenez97",
   "license": "ISC",
   "dependencies": {
+    "fs": "0.0.1-security",
+    "parallel": "^1.2.0",
     "typescript": "^4.7.4"
   }
 }

@@ -2,10 +2,16 @@
 const fs = require('fs');
 
 const getPackageJsonContent = (folder) => `{
+  "name": "@gjimenez97/${folder}",
+  "description": "",
+  "keywords": [""],
+  "version": "0.0.1",
   "sideEffects": false,
   "module": "./${folder}.js",
-  "main": "../${folder}.js",
-  "types": "./${folder}.d.ts"
+  "main": "./${folder}.js",
+  "types": "./${folder}.d.ts",
+  "author": "gjimenez97",
+  "license": "ISC"
 }`
 
 const copyFiles = () => {

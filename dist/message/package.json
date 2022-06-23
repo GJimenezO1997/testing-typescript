@@ -1,6 +1,12 @@
 {
+  "name": "@gjimenez97/message",
+  "description": "",
+  "keywords": [""],
+  "version": "0.0.1",
   "sideEffects": false,
-  "module": "./Message.js",
-  "main": "../Message.js",
-  "types": "./Message.d.ts"
+  "module": "./message.js",
+  "main": "./message.js",
+  "types": "./message.d.ts",
+  "author": "gjimenez97",
+  "license": "ISC"
 }
