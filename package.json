@@ -9,8 +9,9 @@
     "clean": "tsc --build --clean",
     "copy:package": "tsc --build --copyTo package",
     "tsc:message": "tsc  -p ./src/Message/tsconfig.json",
-    "copy:message": "node ./scripts/copy.js --mesage",
-    "build:message": "npm-run-all --parallel tsc:message copy"
+    "copy": "node ./util/npm/copyFile.js",
+    "copy:message": "node ./scripts/copyFile.js --mesage",
+    "build:message": "npm-run-all --parallel tsc:message \"copy --Message\""
   },
   "author": "GJ",
   "license": "ISC",

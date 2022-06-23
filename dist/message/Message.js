@@ -8,4 +8,4 @@ var showMessage = function () {
     console.log(objMessage);
     return objMessage.descripcion + ' ' + message2;
 };
-export default showMessage;
+export { showMessage };

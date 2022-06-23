@@ -3,10 +3,10 @@ interface Message {
 	descripcion: string;
 	items: Array<string>;
 }
-type MessageFunction = () => string;
+type ShowMessage = () => string;
 
 type message = string;
-const showMessage: MessageFunction = () => {
+const showMessage: ShowMessage = () => {
 	const objMessage: Message = {
 		titulo: 'Hola',
 		descripcion: 'Hola Mundo',
@@ -17,4 +17,4 @@ const showMessage: MessageFunction = () => {
 	return objMessage.descripcion + ' ' + message2;
 };
 
-export default showMessage;
+export { showMessage };

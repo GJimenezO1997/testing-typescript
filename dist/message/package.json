@@ -1,0 +1,6 @@
+{
+  "sideEffects": false,
+  "module": "./Message.js",
+  "main": "../Message.js",
+  "types": "./Message.d.ts"
+}

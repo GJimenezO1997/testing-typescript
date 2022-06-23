@@ -1,3 +1,3 @@
-declare type MessageFunction = () => string;
-declare const showMessage: MessageFunction;
-export default showMessage;
+declare type ShowMessage = () => string;
+declare const showMessage: ShowMessage;
+export { showMessage };
