@@ -6,7 +6,11 @@
   "types": "dist/Message.d.ts",
   "scripts": {
     "build": "tsc --build",
-    "clean": "tsc --build --clean"
+    "clean": "tsc --build --clean",
+    "copy:package": "tsc --build --copyTo package",
+    "tsc:message": "tsc  -p ./src/Message/tsconfig.json",
+    "copy:message": "node ./scripts/copy.js --mesage",
+    "build:message": "npm-run-all --parallel tsc:message copy"
   },
   "author": "GJ",
   "license": "ISC",
