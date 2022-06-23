@@ -1,0 +1,16 @@
+{
+  "name": "test-typescript-npm-gj-qn",
+  "version": "1.0.2",
+  "description": "test of upload typescript",
+  "main": "dist/Message.js",
+  "types": "dist/Message.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "author": "GJ",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
+}
